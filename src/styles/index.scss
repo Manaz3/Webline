@@ -1,0 +1,16 @@
+@import './reset';
+@import '../styles/variables/global';
+@import '../styles/themes/light';
+@import '../styles/themes/dark';
+
+
+.app { 
+    font-size: var(--font-size-m);
+    line-height: var(--font-line-m);
+    font-family: var(--font-family-main);
+
+    background: var(--bg-color);
+    color: var(--primary-color);
+    min-height: 100vh;
+}
+

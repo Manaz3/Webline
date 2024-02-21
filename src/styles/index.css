@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+button,
+textarea,
+select {
+  margin: 0;
+  font: inherit;
+}
+
+:root {
+  --font-family-main: Consolas, "Times New Roman", Serif;
+  --font-size-m: 16px;
+  --font-line-m: 24px;
+  --font-size-l: 24px;
+  --font-line-l: 32px;
+}
+
+.app.light {
+  --bg-color: #dadade;
+  --primary-color: rgb(4, 51, 168);
+  --secondary-color: rgb(9, 78, 168);
+}
+
+.app.dark {
+  --bg-color: #0e0e75;
+  --primary-color: rgb(6, 110, 6);
+  --secondary-color: green;
+}
+
+.app {
+  font-size: var(--font-size-m);
+  line-height: var(--font-line-m);
+  font-family: var(--font-family-main);
+  background: var(--bg-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+}
