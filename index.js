@@ -3,8 +3,6 @@
 // const bracels1 = '[{[[}]]}]';
 // const bracels2 = '[[[{}]]]';
 
-
-
 // function bracels(str) {
 //     const open = ['[', '{', '('];
 //     const close = [']', '}', ')'];
@@ -45,8 +43,7 @@
 
 // console.log(clone)
 
-
-//! toReversed из ECMAscript 2023 тоже не работает, остальные нововведения, я так понимаю, тоже. 
+//! toReversed из ECMAscript 2023 тоже не работает, остальные нововведения, я так понимаю, тоже.
 //! Как обновиться?
 // const arr = ['apple', 'pussy', 'juice']
 
@@ -112,7 +109,7 @@
 // const person2 = {name: 'Viktoria', age: '26', job:'manager'}
 
 // function makePerson() {
-//     console.log(`Person: ${this.name}, ${this.age}, ${this.job}`) 
+//     console.log(`Person: ${this.name}, ${this.age}, ${this.job}`)
 // }
 
 // bind(person1, makePerson)()
@@ -145,10 +142,10 @@
 //     }
 // }
 
-// let num = value(); 
+// let num = value();
 // // лексическое окружение удаляется из памяти вместе со всеми переменными после завершения
 // // оно хранится в памяти только до тех пор, пока к нему можно обратиться
-// //num.[[Enviroment]] хранит ссылку на лексическое окружение вызова функции value(), к нему можно обращаться по имени num 
+// //num.[[Enviroment]] хранит ссылку на лексическое окружение вызова функции value(), к нему можно обращаться по имени num
 // // следовательно лексическое окружение остается доступным даже после завершения работы анонимной функции функции
 
 // const arr = [num(), num(), num()]
@@ -157,27 +154,26 @@
 // num = null; //Здесь ссылка на лексическое окружение удаляется из памяти, потому что в переменной больше нет вызова функции
 // //а следовательно и нет обращения к лексическому окружению
 
-
 //? Задача на лексическое обращение, что выведет функция?
 // function makeWorker() {
 //     let name = "Pete";
-  
+
 //     return function() {
 //       alert(name);
 //     };
 //   }
-  
+
 //   let name = "John";
-  
+
 //   // создаём функцию
 //   let work = makeWorker();
-  
+
 //   // вызываем её
 //   work(); // что будет показано?
 
-//   // Будет показано имя Pete, т.к. Функция work() 
+//   // Будет показано имя Pete, т.к. Функция work()
 //   //получает name из места его происхождения через ссылку на внешнее лексическое окружение
-  
+
 // //? Задача на сумму через sum(a)(b)
 // function sum(a) {
 //     return function(b) {
@@ -250,7 +246,7 @@
 
 // function getAnswer(question, yes, no) {
 //     if (confirm(question)) yes()
-//     else no(); 
+//     else no();
 // }
 
 // function showOk() {
@@ -267,7 +263,7 @@
 
 // function getAnswer(question, yes, no) {
 //     if (confirm(question)) yes()
-//     else no(); 
+//     else no();
 // }
 
 // getAnswer(
@@ -293,7 +289,7 @@
 //         reject => {
 //           return null;
 //         })
-      
+
 //     ))
 //     let result = await Promise.all(gitNames)
 //     return result;
@@ -314,7 +310,7 @@
 // }
 
 // class Student extends Person {
-  
+
 //   constructor(name, cock, age, sex) {
 //     super(name, cock)
 //     this.age = age;
@@ -369,7 +365,7 @@
 //         s.push(s[s.length - 1] + s[s.length - 2])
 //         return s;
 //     }
- 
+
 // }
 
 // console.log(fibonacci(8));
@@ -383,7 +379,7 @@
 //       internals: [{name: 'Jack', salary: 1300}]
 //     }
 //   };
- 
+
 //   function salarySum(dept) {
 //     if (Array.isArray(dept)) {
 //         return dept.reduce((acc, value) => acc + value.salary, 0);
@@ -398,7 +394,6 @@
 //   }
 
 //   console.log(salarySum(company))
-
 
 //? Фибоначчи, вывод нужного члена
 // function fibonacci(n) {
@@ -420,7 +415,6 @@
 //         .join('')
 // }
 
-
 // console.log(camelize(str));
 
 //? Фильтрация по диапазону
@@ -441,10 +435,10 @@
 //     if (num < a || num > b) {
 //         arr.splice(i, 1)
 //         i--
-        
+
 //     }
 //   }
-   
+
 // }
 
 // filteredMut(arr, 1, 4);
@@ -476,7 +470,7 @@
 //     this.methods = {
 //         "+": (a, b) => a + b,
 //     }
-    
+
 //     this.calculate = function(str) {
 //         const arr = str.split(' ');
 //         return  this.methods[arr[1]](Number(arr[0]), Number(arr[2]))
@@ -567,7 +561,7 @@
 //     {id: 'ann', name: "Ann Smith", age: 24},
 //     {id: 'pete', name: "Pete Peterson", age: 31},
 //   ];
-  
+
 // function groupById(users) {
 //     let obj = {}
 //     users.reduce((acc, value) => obj[value.id] = value, users[0])
@@ -576,8 +570,8 @@
 
 //   let usersById = groupById(users);
 //   console.log(usersById)
-  
-  /*
+
+/*
   // после вызова у нас должно получиться:
   
   usersById = {
@@ -587,9 +581,8 @@
   }
   */
 
-
-  //! Map и Set
-  //? Отфильтровать анаграммы
+//! Map и Set
+//? Отфильтровать анаграммы
 //   let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
 
 //   function anaFilter(arr) {
@@ -622,10 +615,10 @@
 // function filterAnagrams(word, arr) {
 //   const sortedWord = word.split('').sort().join('');
 //   let copiedArr = [...arr]
-  
+
 //   return copiedArr.filter((x) => x.split('').sort().join('') === sortedWord )
 //   }
-  
+
 //   console.log(filterAnagrams('laser', ['lazing', 'lazy',  'lacer']))
 
 //? Создание объекта из параметризированного поиска с помощью reduce
@@ -639,7 +632,6 @@
 //   }, obj)
 //   return obj;
 // }
-
 
 // console.log(getParams('name=hexlet&count=3&order=asc'))
 
@@ -709,23 +701,3 @@
 
 // console.log(isTheSamePoint(p1, p2))
 // console.log(isTheSamePoint(p1, p3))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
