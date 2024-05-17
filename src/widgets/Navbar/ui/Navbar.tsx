@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { classNames } from "@/shared/lib/classNames/classNames";
 import cls from './Navbar.module.scss'
 import Applink, { AppLinkTheme } from "@/shared/ui/AppLink/AppLink";
