@@ -2,7 +2,6 @@
     height: calc(100vh - var(--navbar-height)); //рассчитываем высоту сайдбара через функцию calc
     width: 300px;
     background-color: var(--inverted-bg-color);
-
     position: relative;
     transition: width 0.2s;
 }
