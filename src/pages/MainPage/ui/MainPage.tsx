@@ -1,4 +1,4 @@
-import { BugButton } from "@/app/provider/router/ErrorBoundary";
+import { BugButton } from "@/app/provider/ErrorBoundary";
 import { useTranslation } from "react-i18next";
 
 

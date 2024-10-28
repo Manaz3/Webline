@@ -8,6 +8,7 @@ interface NotFoundPageProps {
 className?: string
         }
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         export const NotFoundPage = ({className}: NotFoundPageProps) => {
             const { t } = useTranslation();  
         return (

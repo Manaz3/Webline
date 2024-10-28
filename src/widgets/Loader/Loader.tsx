@@ -4,6 +4,7 @@ interface LoaderProps {
 className?: string
         }
 
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         export const Loader = ({className}: LoaderProps) => {
         return (
             <div className={classNames('loader')}>

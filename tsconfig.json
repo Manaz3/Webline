@@ -5,10 +5,10 @@
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
     "skipLibCheck": true,
-    "types": ["node", "jest"],
+    "types": ["node", "jest", "@testing-library/jest-dom"],
     // Для абсолютного импорта
     "baseUrl": ".",
-    "paths": { "@/*": ["./src/*"] },
+    "paths": { "*": ["./src/*"] },
 
     /* Bundler mode */
     "moduleResolution": "Node",
@@ -21,6 +21,8 @@
         "name": "typescript-plugin-css-modules"
       }
     ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
 
     /* Linting */
     "strict": true,
@@ -28,6 +30,9 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": [
+    "src",
+    "./config/jest/setupTests.ts"
+  ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
