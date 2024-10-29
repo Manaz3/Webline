@@ -8,7 +8,7 @@
     "types": ["node", "jest", "@testing-library/jest-dom"],
     // Для абсолютного импорта
     "baseUrl": ".",
-    "paths": { "*": ["./src/*"] },
+    "paths": { "@/*": ["./src/*"] },
 
     /* Bundler mode */
     "moduleResolution": "Node",

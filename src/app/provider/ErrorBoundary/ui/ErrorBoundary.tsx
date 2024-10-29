@@ -1,5 +1,7 @@
+
 import PageError from "@/widgets/PageError/ui/PageError";
 import * as React from "react";
+
 
 interface ErrorBoundaryProps {
     children: React.ReactNode

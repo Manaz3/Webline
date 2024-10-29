@@ -1,10 +1,11 @@
 import './styles/index.scss';
 import { AppRouter } from './provider/router';
 import { Suspense } from 'react';
-import { SideBar } from 'widgets/SideBar';
-import { Navbar } from 'widgets/Navbar';
 import { useTheme } from './provider/ThemeProvider/ui';
-import { classNames } from 'shared/lib/classNames/classNames';
+import { classNames } from '@/shared/lib/classNames/classNames';
+import { Navbar } from '@/widgets/Navbar';
+import { SideBar } from '@/widgets/SideBar';
+
 //npx vite-bundle-visualizer для запуска анализатора бандла
 
 function App() {
